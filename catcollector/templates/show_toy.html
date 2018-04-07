@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+<!-- {% load static %} -->
+
+{% block content %}
+  <div class="toy_list  col s12 m6">
+    <h3>Toy: {{toy.name}}</h3>
+    <h4> Cats: </h4>
+    <ul>
+      {% for cat in cats %}
+      <li> <a href="/{{ cat.id }}"></a>{{ cat.name }}</li>
+      {% endfor %}
+    </ul>
+    <hr />
+  </div>
+{% endblock %}
