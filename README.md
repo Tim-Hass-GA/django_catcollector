@@ -1,0 +1,2 @@
+# django_catcollector
+django_python_postgres boilerplate
